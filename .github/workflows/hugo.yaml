@@ -20,9 +20,10 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: hugo-actions/hugo-setup@v1
+        # 換成這個最穩定的版本
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.158.0' # 強制使用新版以支援 FixIt 的 try 語法
+          hugo-version: '0.158.0'
           extended: true
 
       - name: Build
