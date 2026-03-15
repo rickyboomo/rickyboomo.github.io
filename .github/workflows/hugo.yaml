@@ -23,7 +23,7 @@ jobs:
         # 換成這個最穩定的版本
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.158.0'
+          hugo-version: 'latest' # '0.158.0'
           extended: true
 
       - name: Build
