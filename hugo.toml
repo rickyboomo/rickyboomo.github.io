@@ -1,0 +1,10 @@
+baseURL = 'https://rickyboo.org/'
+languageCode = 'zh-tw'
+title = 'RickyBoo | 新冒險'
+theme = 'PaperMod'  # 假設你延用 PaperMod，或換成你喜歡的主題
+
+[params]
+    defaultTheme = "auto"
+
+[markup.goldmark.renderer]
+    unsafe = true  # 方便你以後內嵌 YouTube 或其他 HTML
