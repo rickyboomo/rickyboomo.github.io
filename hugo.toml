@@ -1,11 +1,21 @@
 baseURL = 'https://rickyboo.org/'
 languageCode = 'zh-tw'
 title = 'RickyBoo | 新冒險'
-theme = 'PaperMod'  # 假設你延用 PaperMod，或換成你喜歡的主題
+theme = 'FixIt'
 
 [params]
+    # 這裡可以設定一些活潑的色彩或圖示
     defaultTheme = "auto"
-    relativeURLs = false
-
+    gitRepo = "https://github.com/rickyboomo/rickyboomo.github.io"
+    relativeURLs = false   
+    [params.header]
+      # 讓標題有打字機效果（更活潑）
+      titleMenu = "Ricky's Adventure"
 [markup.goldmark.renderer]
     unsafe = true  # 方便你以後內嵌 YouTube 或其他 HTML
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 1
